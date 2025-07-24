@@ -6,6 +6,7 @@ import com.scaler.ecomm_productservice.models.Category;
 import com.scaler.ecomm_productservice.models.Product;
 import com.scaler.ecomm_productservice.repositories.CategoryRepository;
 import com.scaler.ecomm_productservice.repositories.ProductRepository;
+import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -62,5 +63,10 @@ public class SelfProductService implements ProductService{
     @Override
     public List<Product> getProductsByCategory(Long categoryId) {
         return List.of();
+    }
+
+    @Override
+    public Page<Product> getProductsByTitle(String title, int pageNumber, int pageSize) {
+        return null;
     }
 }

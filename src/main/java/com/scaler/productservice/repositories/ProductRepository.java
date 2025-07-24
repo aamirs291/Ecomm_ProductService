@@ -2,6 +2,8 @@ package com.scaler.ecomm_productservice.repositories;
 
 import com.scaler.ecomm_productservice.models.Category;
 import com.scaler.ecomm_productservice.models.Product;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
@@ -21,7 +23,9 @@ public interface ProductRepository extends JpaRepository<Product, Long> {
     @Query("SELECT p FROM products p WHERE p.id=?1")
     Optional<Product> findProductWithGivenId(Long productId);
 
-    List<Product> findByTitleContainsIgnoreCase(String title);
+//    List<Product> findByTitleContainsIgnoreCase(String title);
+
+    Page<Product> findByTitleContainsIgnoreCase(String title, Pageable pageable);
 
     List<Product> findByPriceBetween(Double priceAfter, Double priceBefore);
 

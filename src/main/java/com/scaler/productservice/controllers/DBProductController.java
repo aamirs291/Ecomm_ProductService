@@ -6,6 +6,7 @@ import com.scaler.ecomm_productservice.exceptions.ProductNotFoundException;
 import com.scaler.ecomm_productservice.models.Category;
 import com.scaler.ecomm_productservice.models.Product;
 import com.scaler.ecomm_productservice.services.ProductService;
+import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
@@ -38,6 +39,11 @@ public class DBProductController {
     @GetMapping("/categories/{id}/products")
     public ResponseEntity<List<Product>> getProductsUsingCategory(@PathVariable("id") Long categoryId) {
         return new ResponseEntity<>(dbProductService.getProductsByCategory(categoryId), HttpStatus.OK);
+    }
+
+    @GetMapping("/title/{title}/{pageNumber}/{pageSize}")
+    public Page<Product> getProductByTitle(@PathVariable("title") String title, @PathVariable("pageNumber") int pageNumber, @PathVariable("pageSize") int pageSize) {
+        return dbProductService.getProductsByTitle(title, pageNumber, pageSize);
     }
 
     @PostMapping

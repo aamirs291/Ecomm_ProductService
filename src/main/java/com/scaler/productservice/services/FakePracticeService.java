@@ -5,6 +5,7 @@ import com.scaler.ecomm_productservice.exceptions.CategoryNotFoundException;
 import com.scaler.ecomm_productservice.exceptions.ProductNotFoundException;
 import com.scaler.ecomm_productservice.models.Category;
 import com.scaler.ecomm_productservice.models.Product;
+import org.springframework.data.domain.Page;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
@@ -58,6 +59,11 @@ public class FakePracticeService implements ProductService{
     @Override
     public List<Product> getProductsByCategory(Long categoryId) {
         return List.of();
+    }
+
+    @Override
+    public Page<Product> getProductsByTitle(String title, int pageNumber, int pageSize) {
+        return null;
     }
 
     private Product convertDtoToProduct(FakeStoreProductDTO fakeStoreProductDTO) {

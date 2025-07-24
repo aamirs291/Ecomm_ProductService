@@ -7,6 +7,10 @@ import com.scaler.ecomm_productservice.models.Product;
 import com.scaler.ecomm_productservice.repositories.CategoryRepository;
 import com.scaler.ecomm_productservice.repositories.ProductRepository;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
@@ -69,6 +73,16 @@ public class DBProductService implements ProductService {
 //    }
 
     @Override
+    public Page<Product> getProductsByTitle(String title, int pageNumber, int pageSize) {
+        return productRepository.findByTitleContainsIgnoreCase(
+                title,
+                PageRequest.of(pageNumber,
+                        pageSize,
+                        Sort.by(Sort.Direction.DESC, "price"))
+        );
+    }
+
+    @Override
     public Product createProduct(Product product) throws CategoryNotFoundException {
         if (product == null) {
             throw new RuntimeException("Provide a product");
@@ -98,5 +112,6 @@ public class DBProductService implements ProductService {
     public List<Product> getProductsByCategory(Long categoryId){
         return productRepository.findAllByCategory_Id(categoryId);
     }
+
 
 }
