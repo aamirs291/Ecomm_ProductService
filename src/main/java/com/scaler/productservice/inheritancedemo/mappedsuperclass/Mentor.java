@@ -1,4 +1,4 @@
-package com.scaler.ecomm_productservice.inheritancedemo.mappedsuperclass;
+package com.scaler.productservice.inheritancedemo.mappedsuperclass;
 
 import jakarta.persistence.Entity;
 import lombok.Getter;

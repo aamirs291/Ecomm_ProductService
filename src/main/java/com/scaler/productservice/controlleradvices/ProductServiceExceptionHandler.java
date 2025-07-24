@@ -1,8 +1,7 @@
-package com.scaler.ecomm_productservice.controlleradvices;
+package com.scaler.productservice.controlleradvices;
 
-import com.scaler.ecomm_productservice.dtos.ExceptionDTO;
-import com.scaler.ecomm_productservice.dtos.ProductNotFoundExceptionDTO;
-import com.scaler.ecomm_productservice.exceptions.ProductNotFoundException;
+import com.scaler.productservice.dtos.ProductNotFoundExceptionDTO;
+import com.scaler.productservice.exceptions.ProductNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;

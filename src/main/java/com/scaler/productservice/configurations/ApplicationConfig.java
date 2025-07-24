@@ -1,4 +1,4 @@
-package com.scaler.ecomm_productservice.configurations;
+package com.scaler.productservice.configurations;
 
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;

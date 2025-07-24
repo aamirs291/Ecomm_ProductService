@@ -1,17 +1,15 @@
-package com.scaler.ecomm_productservice.controllers;
+package com.scaler.productservice.controllers;
 
-import com.scaler.ecomm_productservice.dtos.ProductNotFoundExceptionDTO;
-import com.scaler.ecomm_productservice.exceptions.CategoryNotFoundException;
-import com.scaler.ecomm_productservice.exceptions.ProductNotFoundException;
-import com.scaler.ecomm_productservice.models.Product;
-import com.scaler.ecomm_productservice.services.ProductService;
+import com.scaler.productservice.exceptions.CategoryNotFoundException;
+import com.scaler.productservice.exceptions.ProductNotFoundException;
+import com.scaler.productservice.models.Product;
+import com.scaler.productservice.services.ProductService;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @RestController

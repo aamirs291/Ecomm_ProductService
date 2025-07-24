@@ -1,14 +1,13 @@
-package com.scaler.ecomm_productservice.controllers;
+package com.scaler.productservice.controllers;
 
-import com.scaler.ecomm_productservice.dtos.ProductDTO;
-import com.scaler.ecomm_productservice.exceptions.CategoryNotFoundException;
-import com.scaler.ecomm_productservice.exceptions.ProductNotFoundException;
-import com.scaler.ecomm_productservice.models.Category;
-import com.scaler.ecomm_productservice.models.Product;
-import com.scaler.ecomm_productservice.services.ProductService;
+import com.scaler.productservice.dtos.ProductDTO;
+import com.scaler.productservice.exceptions.CategoryNotFoundException;
+import com.scaler.productservice.exceptions.ProductNotFoundException;
+import com.scaler.productservice.models.Category;
+import com.scaler.productservice.models.Product;
+import com.scaler.productservice.services.ProductService;
 import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

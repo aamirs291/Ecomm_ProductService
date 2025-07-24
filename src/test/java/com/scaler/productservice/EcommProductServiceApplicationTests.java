@@ -1,4 +1,4 @@
-package com.scaler.ecomm_productservice;
+package com.scaler.productservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

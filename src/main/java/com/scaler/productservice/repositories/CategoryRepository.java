@@ -1,12 +1,10 @@
-package com.scaler.ecomm_productservice.repositories;
+package com.scaler.productservice.repositories;
 
-import com.scaler.ecomm_productservice.models.Category;
+import com.scaler.productservice.models.Category;
 //import org.apache.el.stream.Optional;
-import com.scaler.ecomm_productservice.models.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import java.util.List;
 import java.util.Optional;
 
 @Repository

@@ -1,4 +1,4 @@
-package com.scaler.ecomm_productservice.models;
+package com.scaler.productservice.models;
 
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;

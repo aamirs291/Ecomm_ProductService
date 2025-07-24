@@ -1,6 +1,5 @@
-package com.scaler.ecomm_productservice.inheritancedemo.joinedtable;
+package com.scaler.productservice.inheritancedemo.joinedtable;
 
-import com.scaler.ecomm_productservice.inheritancedemo.joinedtable.User;
 import jakarta.persistence.Entity;
 import jakarta.persistence.PrimaryKeyJoinColumn;
 import lombok.Getter;

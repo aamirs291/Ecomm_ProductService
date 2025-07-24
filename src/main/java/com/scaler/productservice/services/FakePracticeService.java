@@ -1,10 +1,10 @@
-package com.scaler.ecomm_productservice.services;
+package com.scaler.productservice.services;
 
-import com.scaler.ecomm_productservice.dtos.FakeStoreProductDTO;
-import com.scaler.ecomm_productservice.exceptions.CategoryNotFoundException;
-import com.scaler.ecomm_productservice.exceptions.ProductNotFoundException;
-import com.scaler.ecomm_productservice.models.Category;
-import com.scaler.ecomm_productservice.models.Product;
+import com.scaler.productservice.dtos.FakeStoreProductDTO;
+import com.scaler.productservice.exceptions.CategoryNotFoundException;
+import com.scaler.productservice.exceptions.ProductNotFoundException;
+import com.scaler.productservice.models.Category;
+import com.scaler.productservice.models.Product;
 import org.springframework.data.domain.Page;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;

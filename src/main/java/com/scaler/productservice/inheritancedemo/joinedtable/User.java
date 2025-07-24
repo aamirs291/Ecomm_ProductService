@@ -1,9 +1,8 @@
-package com.scaler.ecomm_productservice.inheritancedemo.joinedtable;
+package com.scaler.productservice.inheritancedemo.joinedtable;
 
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
-import org.hibernate.Internal;
 
 @Getter
 @Setter

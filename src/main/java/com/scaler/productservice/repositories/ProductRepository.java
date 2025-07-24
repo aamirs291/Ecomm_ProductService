@@ -1,12 +1,11 @@
-package com.scaler.ecomm_productservice.repositories;
+package com.scaler.productservice.repositories;
 
-import com.scaler.ecomm_productservice.models.Category;
-import com.scaler.ecomm_productservice.models.Product;
+import com.scaler.productservice.models.Category;
+import com.scaler.productservice.models.Product;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
-import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;

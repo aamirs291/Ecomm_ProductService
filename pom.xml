@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.scaler</groupId>
-    <artifactId>Ecomm_ProductService</artifactId>
+    <artifactId>ProductService</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>Ecomm_ProductService</name>
-    <description>Ecomm_ProductService</description>
+    <name>ProductService</name>
+    <description>ProductService</description>
     <url/>
     <licenses>
         <license/>
@@ -77,6 +77,12 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-oauth2-resource-server</artifactId>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-netflix-eureka-client -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+            <version>4.2.2</version>
         </dependency>
     </dependencies>
 

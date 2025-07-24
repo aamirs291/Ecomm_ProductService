@@ -1,10 +1,9 @@
-package com.scaler.ecomm_productservice.services;
+package com.scaler.productservice.services;
 
-import com.scaler.ecomm_productservice.exceptions.CategoryNotFoundException;
-import com.scaler.ecomm_productservice.exceptions.ProductNotFoundException;
-import com.scaler.ecomm_productservice.models.Product;
+import com.scaler.productservice.exceptions.CategoryNotFoundException;
+import com.scaler.productservice.exceptions.ProductNotFoundException;
+import com.scaler.productservice.models.Product;
 import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
 
 import java.util.List;
 

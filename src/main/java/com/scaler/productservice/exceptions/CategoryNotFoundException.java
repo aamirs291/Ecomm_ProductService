@@ -1,4 +1,4 @@
-package com.scaler.ecomm_productservice.exceptions;
+package com.scaler.productservice.exceptions;
 
 public class CategoryNotFoundException extends Exception {
 
